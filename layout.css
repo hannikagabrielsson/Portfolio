@@ -30,8 +30,6 @@ body{
 .nav >* {
     margin: 1rem 2rem;
     text-decoration: none;
- 
-   
 }
 .link-nav {
     text-decoration: none;
@@ -43,6 +41,10 @@ p {
     font-family: cormorant garamond;
     font-size: 16px;
     /* width: 30rem; */
+}
+
+.tablet {
+    display: none;
 }
 
 h1 {
@@ -63,17 +65,21 @@ h3 {
     margin: 0 2rem 2rem;
     display: flex;
     flex-wrap: nowrap;
-    /* width: 100%; */
     justify-content: center;
 }
 h4 {
     font-family: quicksand;
     font-size: 12px;
-    margin: 0 0 6rem 6rem;
+    margin: 0 0 6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 hr {
     width: 20rem;
+    border-color: var(--black);
+    border: solid 0.5px var(--black);
 }
 .line-header {
     margin-block-end: 10rem;
@@ -129,6 +135,7 @@ h2 {
 
 .taidot-p {
    margin: 0 3rem 4rem;
+   width: auto;
 }
 
 .taidot-box {
@@ -156,25 +163,494 @@ h2 {
     border: solid 0.5px var(--black);
 }
 
+.happy-logo {
+    width: 28rem;
+    margin: 3rem 0 3rem 2rem;
+}
 h5 {
     font-family: federo;
     font-size: 16px;
     margin-block-end: 2rem;
     margin-inline-start: 3rem;
+    line-height: 3rem;
+}
+
+.project-description {
+    margin: 0 3rem 4rem;
+    width: auto;
+}
+.line-portfolio {
+    margin-block-start: 2rem;
+    margin-block-end: 3rem;
+    border-color: var(--black);
+    border: solid 0.5px var(--black);
+}
+
+.react-tasks {
+    margin-block-start: -3rem;
+    margin-block-end: 4rem;
+}
+.react-tasks >* {
+    margin: 0 3rem 2rem;
+}
+.react-tasks li {
+    font-size: 16px;
+}
+.react-tasks a {
+    color: var(--black);
+}
+.line-portfolio-end {
+    margin-block-end: 7rem;
+}
+
+.contact-p {
+    margin: 0 3rem 2rem;
+    width: auto;
+}
+
+.orange-box {
+    background-color: var(--orange);
+    width: auto;
+    height: 28rem;
+    margin-inline-start: 5rem;
+    margin-block-start: 12rem;
+    margin-block-end: 7rem;
+}
+.image-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 .photo2 {
     width: 20rem;
+    margin-inline-start: -5rem;
+    margin-block-start: -7rem;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
 }
 .icon {
     width: 2rem;
+    margin: 0.5rem 2rem;
+    fill: var(--beige);
+}
+
+.contact-info {
+    margin: 2rem 0 4rem 3rem;
+    color: var(--beige);
+}
+
+.nav-footer {
+    margin-inline-start: -3rem;
+}
+.logo-footer {
+    width: 12rem;
+    margin: -17rem 0 5rem 16rem;
 }
 /* tablet-näkymä */
 @media only screen and (min-width: 426px) {
   
+    .nav {
+        font-size: 14px;
+        flex-direction: row;
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0 0 6rem;
+    }
+    .nav >* {
+        margin: 1rem 4rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: contents;
+    }
+    h3 {
+        font-size: 34px;
+    }
+    h4 {
+        font-size: 14px;
+        margin: 0 0 6rem;
+    }
+  
+    .logo-figure {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .logo {
+        width: 15rem;
+        margin: 0 0 6rem 0;
+    }
+  
+    h1 {
+        font-size: 34px;
+        letter-spacing: 5rem;
+        margin: 0 0 6rem 5rem;
+        transform: rotate(0deg);
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    hr {
+        width: 30rem;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 0 0 2rem 5rem;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    .tietoa-minusta-otsikko {
+        margin: 0 0 10rem 5rem;
+    }
+    .box {
+        width: 50rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-inline-start: 10rem;
+        margin-block-end: 6rem;
+    }
+    .profile-image {
+        width: 30rem;
+        height: 100%;
+        margin-block-start: -25rem;
+        margin-inline-start: 44rem;
+       
+    }
+    .about-me {
+        padding-block-start: 0;
+        margin-block-start: -5rem;
+        width: 28rem;
+    }
+
+    .adjektiivit {
+        flex-direction: row;
+        margin: 0 0 9rem;
+        justify-content: center;
+        width: auto;
+    }
+    .adjektiivit >* {
+        padding: 3rem 5rem;
+        font-size: 26px;
+        margin: 0 1rem;
+        text-align: center;
+        width: 10rem;
+    }
+
+    .taidot-p {
+        margin: 5rem 10rem 4rem 10rem;
+     }
+     
+     .taidot-box {
+         padding: 5rem 2rem 5rem;
+         margin-block-end: 10rem;
+     }
+     .kielet {
+         font-size: 20px;
+         margin-block-end: 3rem;
+     }
+
+     .line-kielet {
+        width: 40rem;
+    }
+
+    .happy-logo {
+        width: 28rem;
+        margin: 3rem 0 3rem 2rem;
+    }
+
+    .projekti-1 {
+        display: flex;
+        flex-direction: row;
+        margin-block-start: 7rem;
+        margin-inline-start: 3rem;
+    }
+    h5 {
+        font-size: 20px;
+        margin-block-end: 2rem;
+        margin-inline-start: 3rem;
+        line-height: 3rem;
+    }
+
+    .project-h5-p {
+        margin-inline-start: 3rem;
+        margin-inline-end: 3rem;
+    }
+    .line-portfolio {
+        margin-block-start: 2rem;
+        margin-block-end: 3rem;
+    }
+    .projekti-2 {
+        margin-block-start: 7rem;
+        margin-inline-start: 6rem;
+        margin-block-end: 5rem;
+    }
+    .react-container {
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .react-tasks {
+        margin-block-start: 2.8rem;
+        margin-block-end: 0;
+        margin-inline-start: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .react-tasks >* {
+        margin: 0 3rem 2rem;
+    }
+    .react-tasks li {
+        font-size: 20px;
+    }
+   
+    .line-portfolio-end {
+        margin-block-end: 10rem;
+    }
+
+    .yhteydenotto {
+        margin-block-start: 12rem;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-p-container {
+        margin: 5rem 5rem 4rem 13rem;
+    }
+    .contact-p {
+        margin: 0 0 2rem;
+        width: 20rem;
+    }
+    
+    .orange-box {
+        width: 40rem;
+        height: 32rem;
+        margin-inline-start: 2rem;
+        margin-inline-end: 10rem;
+        margin-block-start: 3rem;
+        margin-block-end: 7rem;
+    }
+    .image-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .photo2 {
+        width: 24rem;
+        margin-inline-start: 9rem;
+        margin-block-start: -14rem;
+    }
+    
+    .icons-container {
+          
+        margin-inline-start: -32rem;     
+    }
+  
+    .icon {
+        width: 3rem;
+    }
+    .contact-info {
+        margin: 4rem 0 4rem 3rem;
+    }
+
+    .logo-footer {
+        width: 12rem;
+        margin: 0 0 6rem 0;
+    }
+    
   }
 
   /* desktop-näkymä */
 
   @media only screen and (min-width: 769px) {
+
+    .nav {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .logo {
+        width: 20rem;
+        margin: 4rem 0 10rem;
+    }
+
+    h1 {
+        font-size: 38px;
+        letter-spacing: 7rem;
+    }
+    p {
+        font-size: 20px;
+    }
     
+    .tietoa-minusta {
+        margin-block-start: 15rem;
+        margin-inline-start: 20rem;
+    }
+    h2 {
+        font-size: 34px;
+    }
+
+    .tietoa-minusta-otsikko {
+        margin-inline-start: 2rem;
+    }
+    .box {
+        width: 70rem;
+        margin-inline-start: 18rem;
+    }
+
+    .profile-image {
+        width: 32rem;
+        margin-inline-start: 64rem;
+    }
+    .about-me {
+        margin: -6rem 3rem 0;
+        width: 42rem;
+    }
+
+    .adjektiivit {
+        margin: 0 0 15rem;
+    }
+    
+    .adjektiivit >* {
+        padding: 3rem 7rem;
+        font-size: 34px;
+        margin: 0 2rem;
+        width: 20rem;
+    }
+    h2 {
+        margin-inline-start: 0;
+    }
+    .skills-h2 {
+        text-align: center;
+    }
+
+    .taidot-p {
+        margin: 5rem 14rem 7rem 14rem;
+     }
+     
+     .taidot-box {
+         padding: 8rem 2rem 8rem;
+         margin-block-end: 15rem;
+     }
+     .kielet {
+         font-size: 30px;
+         margin-block-end: 7rem;
+     }
+     .kielet >* {
+        margin: 0 2rem;
+     }
+
+     .line-kielet {
+        width: 60rem;
+    }
+
+    .portfolio-h2 {
+        text-align: center;
+    }
+
+    .happy-logo {
+        width: 35rem;
+        margin: 3rem 0 3rem 17rem;
+    }
+
+    .projekti-1 {
+        margin-block-start: 10rem;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    .project-h5-p {
+        margin-block-start: 3rem;
+        margin-inline-start: 8rem;
+        margin-inline-end: 17rem;
+    }
+
+    .line-portfolio {
+        margin-block-start: 6rem;
+        margin-block-end: 3rem;
+        width: 75rem;
+    }
+    .projekti-2 {
+        margin-block-start: 7rem;
+        margin-inline-start: 18rem;
+        margin-block-end: 5rem;
+    }
+   
+    .react-tasks {
+        margin-block-end: 0;
+        margin-inline-start: 22rem;
+        
+    }
+   
+    .line-portfolio-end {
+        margin-block-end: 15rem;
+    }
+
+    .yhteydenotto {
+        margin-inline-start: 24rem;
+    }
+
+    .contact-p-container {
+        margin: 10rem 5rem 4rem 8rem;
+    }
+    .contact-p {
+        width: 35rem;
+    }
+    
+    .orange-box {
+        width: 38rem;
+        height: 38rem;
+        padding-inline-start: 2rem;
+        margin-inline-start: 10rem;
+
+    }
+
+    .photo2 {
+        width: 30rem;
+        margin-inline-start: 16rem;
+        margin-block-start: -14rem;
+    }
+    
+    .icons-container {
+        margin-inline-start: -45rem;     
+    }
+  
+    .icon {
+        width: 5rem;
+    }
+    .contact-info {
+        font-size: 24px;
+        margin: 4rem 0 4rem 3rem;
+    }
+
+    .logo-footer {
+        width: 12rem;
+        margin: 0 0 6rem 0;
+    }
+    
+
   }
