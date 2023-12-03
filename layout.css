@@ -14,6 +14,10 @@ body{
     background-color: var(--beige);
     color: var(--black);
 }
+
+a {
+    cursor: pointer;
+}
 .nav-container {
     display: flex;
     align-items: flex-end;
@@ -338,6 +342,7 @@ h5 {
         flex-grow: 1;
         margin: 2rem 0 0;
         text-align: center;
+        cursor: pointer;
     }
 
     .mobile {
@@ -483,6 +488,7 @@ h5 {
         width: 100%;
         max-width: 28rem;
         /* margin: 3rem 0 3rem 2rem; */
+        cursor: pointer;
     }
 
     .projekti-1 {
@@ -607,6 +613,7 @@ h5 {
         padding:0.5rem 1.5rem;
         margin: 0;
         width: 50%;
+        cursor: pointer;
     }
     .orange-box {
         /* width: 80%; */
