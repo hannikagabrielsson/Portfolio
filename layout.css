@@ -621,6 +621,7 @@ h5 {
         margin-inline-start: 0;     
         width:25%;
         align-self: center;
+        z-index: 1;
     }
   
     .icon {
