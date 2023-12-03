@@ -307,6 +307,7 @@ h5 {
     padding: 22rem 0 0rem 3rem;
     margin-block-end: 3rem;
     color: var(--beige);
+    text-decoration: none;
 }
 
 .nav-footer {
