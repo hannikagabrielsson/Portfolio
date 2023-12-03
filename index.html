@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <header>
+    <header class="nav-container">
         <ul class="nav">
             <li><a class="link-nav" href="#home">HOME</a></li>
             <li><a class="link-nav" href="#about">ABOUT</a></li>
@@ -19,39 +19,46 @@
             <li><a class="link-nav" href="#contact">CONTACT</a></li>
         </ul>
     </header>
-    <div class="mobile">
-        <H1 id="home">PORTFOLIO</H1>
-        <img class="logo" src="./images/Logo.svg" alt="logo">
+    <section class="mobile">
+        <div class="h1-container">
+            <H1 id="home">PORTFOLIO</H1>
+        </div>
+        <div class="logo-container">
+            <img class="logo" src="./images/Logo.svg" alt="logo">
+        </div>
         <h3>HANNIKA GABRIELSSON</h3>
         <h4>FULLSTACK SOFTWARE DEVELOPER</h4>
         <hr class="line-header"/>
-    </div>
-    <div class="tablet">
+    </section>
+    <section class="tablet">
         <h3>HANNIKA GABRIELSSON</h3>
         <h4>FULLSTACK SOFTWARE DEVELOPER</h4>
         <figure class="logo-figure"><img class="logo" src="./images/Logo.svg" alt="logo"></figure>
        <H1 id="home">PORTFOLIO</H1>
         <hr class="line-header"/>
-    </div>
-    <div id="about" class="tietoa-minusta">
-        <h2 class="tietoa-minusta-otsikko">ABOUT ME</h2>
-        <div class="box"> 
-            <img class="profile-image" src="./images/Screenshot 2023-10-06 at 21.54.11.png" alt="Photo of Hannika">
-            <p class="about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis exercitationem architecto, asperiores aliquid eligendi expedita reiciendis molestias corrupti quam odio, voluptatum veritatis earum ut numquam voluptas molestiae itaque. Adipisci delectus tempore repudiandae? Magnam, nemo quo.</p>
+    </section>
+    <section id="about" class="tietoa-minusta">
+        <div class="tietoa-minusta-otsikko-container">
+            <h2 class="tietoa-minusta-otsikko">ABOUT ME</h2>
         </div>
-    </div>
-     <div >
-        <ul class="adjektiivit">
-            <li>strategic</li>
-            <li>creative</li>
-            <li>meticulous</li>
-        </ul>
-    </div>
-    <div>
+        <figure class="image-container"><img class="profile-image" src="./images/Screenshot 2023-10-06 at 21.54.11.png" alt="Photo of Hannika">
+        </figure>
+        <div class="about-me-container">
+            <div class="box"> 
+                <p class="about-me">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis exercitationem architecto, asperiores aliquid eligendi expedita reiciendis molestias corrupti quam odio, voluptatum veritatis earum ut numquam voluptas molestiae itaque. Adipisci delectus tempore repudiandae? Magnam, nemo quo.</p>
+            </div>
+            <ul class="adjektiivit">
+                <li>strategic</li>
+                <li>creative</li>
+                <li>meticulous</li>
+            </ul>
+        </div>
+    </section>
+    <section>
         <h2 id="skills" class="skills-h2">SKILLS</h2>
         <p class="taidot-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, amet veritatis, earum dolorum eaque obcaecati laboriosam consectetur laudantium sunt inventore minima, accusantium ad exercitationem commodi temporibus incidunt mollitia velit illum? Quisquam neque et sapiente, modi vel beatae non recusandae odio?</p>
-    </div>
-    <div class="taidot-box">
+    </section>
+    <section class="taidot-box">
         <ul class="kielet">
             <li>C#</li>
             <li>React</li>
@@ -65,55 +72,57 @@
             <li>Git</li>
         </ul>
         <hr class="line-kielet"/>
-    </div>
-    <div id="portfolio" class="portfolio">
+    </section>
+    <section id="portfolio" class="portfolio">
         <h2 class="portfolio-h2">PORTFOLIO</h2>
         <div class="projekti-1">
-            <a href="happynest-bs.netlify.app"><img class="happy-logo" src="./images/logo-white-background.png" alt="HappyNestin logo"></a>
+            <a class="happynest-logo-container" href="happynest-bs.netlify.app"><img class="happy-logo" src="./images/logo-white-background.png" alt="HappyNestin logo"></a>
             <div class="project-h5-p">
                 <h5>PROJECT - HAPPYNEST</h5>
                 <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus numquam voluptate sunt cumque, velit architecto labore officia rem nostrum consectetur mollitia soluta earum laboriosam nam!</p>
             </div>
         </div>
         <hr class="line-portfolio"/>
+        
         <div class="projekti-2">
-            <h5>REACT</h5>
             <div class="react-container">
-                <p class="project-description">Fullstack Open<br/>Part 1<br/>Introduction to React</p>
-                <img src="" alt="">
+                <div><h5>REACT</h5>
+                <p class="project-description project-description-2">Fullstack Open<br/>Part 1<br/>Introduction to React</p>
+                </div>
                 <ol class="react-tasks">
-                <li><a href="https://hannikagabrielsson.github.io/React-perusteet-Osa1-kurssitiedot/">Exercise 1</a></li>
-                <li><a href="https://hannikagabrielsson.github.io/React-perusteet-Osa1-Unicafe/">Exercise 2</a></li>
-                <li><a href="https://hannikagabrielsson.github.io/React-perusteet-Osa1-anekdootit/">Exercise 3</a></li>
+                    <li><a href="https://hannikagabrielsson.github.io/React-perusteet-Osa1-kurssitiedot/">Exercise 1</a></li>
+                    <li><a href="https://hannikagabrielsson.github.io/React-perusteet-Osa1-Unicafe/">Exercise 2</a></li>
+                    <li><a href="https://hannikagabrielsson.github.io/React-perusteet-Osa1-anekdootit/">Exercise 3</a></li>
                 </ol>
             </div>
         </div>
         <hr class="line-portfolio line-portfolio-end"/>
-        <!-- <div class="projekti-3">
-            <img src="" alt="">
-            <h5>PROJEKTI 3</h5>
-            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus numquam voluptate sunt cumque, velit architecto labore officia rem nostrum consectetur mollitia soluta earum laboriosam nam!</p>
-        </div> -->
-    </div>
-    <div id="contact" class="yhteydenotto">
-        <h2>WORK WITH ME</h2>
+    </section>
+    <section id="contact" class="yhteydenotto">
+        <div class="contact-h2-container">
+            <h2 class="contact-h2">WORK WITH ME</h2>
+        </div>
         <div class="contact-container">
             <div class="contact-p-container">
                 <p class="contact-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, minus. Voluptatum magni repudiandae sit voluptates!</p>
                 <p class="contact-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo et blanditiis autem consequuntur eos asperiores quo, sint totam.</p>
             </div>
-            <div class="orange-box">
+            <div class="box-image-container">
                 <div class="image-icons">
-                    <img class="photo2" src="./images/Screenshot 2023-11-30 at 13.44.34.png" alt="photo of Hannika">
                     <div class="icons-container">
-                        <a href="https://github.com/hannikagabrielsson"><svg class="icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                        <a href="www.linkedin.com/in/hannikagabrielsson"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                        <a href="https://github.com/hannikagabrielsson"><svg class="icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                        <a href="www.linkedin.com/in/hannikagabrielsson"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
                     </div>
+                    <figure class="image2-container">
+                        <img class="photo2" src="./images/Screenshot 2023-11-30 at 13.44.34.png" alt="photo of Hannika">
+                    </figure>
                 </div>
-                <p class="contact-info">info@hannikagabrielsson.com<br/>+358 50 3586042</p>
+               <div class="orange-box">
+                    <p class="contact-info">info@hannikagabrielsson.com<br/>+358 50 3586042</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section> 
     <footer>
         <ul class="nav nav-footer">
             <li><a class="link-nav" href="#home">HOME</a></li>
@@ -122,20 +131,9 @@
             <li><a class="link-nav" href="#portfolio">PORTFOLIO</a></li>
             <li><a class="link-nav" href="#contact">CONTACT</a></li>
         </ul>
-    <!-- <p>Seuraa minua:</p>
-    <div>
-        <img class="icon" src="./icons/github (1).svg" alt="githubin ikoni">
-        <a href="">hannikagabrielsson</a>
-    </div>
-    <div>
-        <img class="icon" src="./icons/linkedin.svg" alt="linkedinin ikoni">
-        <a href="">hannikagabrielsson</a>
-    </div> -->
     <figure class="logo-figure">
         <img class="logo logo-footer" src="./images/Logo.svg" alt="logo">
     </figure>
-    <!-- <p>info@hannikagabrielsson.com</p>
-    <p>+358 50 3586042</p> -->
-</footer>
+    </footer>
 </body>
 </html>
