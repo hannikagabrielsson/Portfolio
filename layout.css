@@ -260,35 +260,18 @@ h5 {
     margin-block-end: 7rem;
 }
 
-.yhteydenotto {
-    /* background-color: blue; */
-}
-.contact-container {
-    /* background-color: green; */
-}
-.contact-p-container {
-    /* background-color: red; */
-}
+
 .contact-p {
     margin: 0 3rem 2rem;
     width: auto;
 }
 
-.box-image-container {
-    /* background-color: purple;
-    display: flex;
-    flex-direction: row; */
-}
-
-
 .image-icons {
-    /* background-color: greenyellow; */
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
 .image2-container {
-    /* background-color: deeppink; */
     width: 80%;
 }
 .photo2 {
@@ -299,7 +282,6 @@ h5 {
 }
 
 .icons-container {
-    /* background-color: mediumpurple; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -337,7 +319,6 @@ h5 {
 
 /* tablet-näkymä */
 @media only screen and (min-width: 426px) {
-  
   
     .nav-container{
         align-items: center;
@@ -403,6 +384,7 @@ h5 {
     }
     p {
         font-size: 18px;
+        line-height: 4rem;
     }
     .tietoa-minusta-otsikko-container {
         display: flex;
@@ -454,11 +436,14 @@ h5 {
         width: 100%;
     }
 
+    .about-me-container {
+        width: 100%;
+    }
     .adjektiivit {
         flex-direction: row;
         margin: 0 0 9rem;
         justify-content: center;
-        width: auto;
+        width: 100%;
         flex-wrap: wrap;
         display: flex;
     }
@@ -489,10 +474,6 @@ h5 {
         width: 40rem;
     }
 
-    /* .portfolio-h2 {
-        text-align: center;
-    } */
-
     .happynest-logo-container {
         display: block;
     }
@@ -502,7 +483,6 @@ h5 {
         max-width: 28rem;
         /* margin: 3rem 0 3rem 2rem; */
     }
-
 
     .projekti-1 {
         display: flex;
@@ -526,7 +506,6 @@ h5 {
         margin-block-start: 2rem;
         margin-block-end: 3rem;
     }
-
   
     .projekti-2 {
         margin-block-start: 7rem;
@@ -561,21 +540,18 @@ h5 {
     }
 
     .yhteydenotto {
-        /* background-color: red; */
         margin-block-start: 12rem;
         display: block;
         width: 100%;
         margin: 12 0 0 0;
-        /* flex-wrap: wrap;
-        flex-direction: row; */
+  
     }
 
     .contact-container {
-        display: flex;   /*vihreä*/
+        display: flex; 
         flex-direction: row;
         width: 100%;
         margin: 0;
-        /* max-width: 100%; */
     }
     .contact-p-container {
         padding: 5rem 5rem 4rem;
@@ -586,14 +562,10 @@ h5 {
     .contact-p {
         margin: 0 0 2rem;
         padding: 0 3rem 0 5rem;
-        /* width: 100%;
-        max-width: 65rem; */
     }
     .box-image-container {
-        /* background-color: aliceblue; */
         width: 40%;
         margin: 0;
-
     }
     .image-icons {
         align-items: flex-start;
@@ -637,7 +609,7 @@ h5 {
     }
     .orange-box {
         /* width: 80%; */
-        max-width:100%;
+        max-width:75%;
         /* height: 32rem; */
         margin-inline-start: 0rem;
         padding-inline-end: 5rem;
@@ -646,13 +618,14 @@ h5 {
         display: flex;
         flex-direction: column;
     }
-   
+  
   
     .contact-info {
         margin: 0 0 4rem 0;
         width: 100%;
         min-width: 20rem;
         font-size: 2.5vw;
+        line-height: 2.5rem;
     }
     .nav-footer {
         padding: 0 1rem;
@@ -663,13 +636,17 @@ h5 {
         width: 12rem;
         margin: 0 0 6rem 0;
     }
-    
+    /* body {
+        background-color: red;
+       } */
   }
 
   /* desktop-näkymä */
 
   @media only screen and (min-width: 769px) {
-
+    /* body {
+    background-color: blue;
+    } */
   
     .nav {
         font-size: 18px;
@@ -723,6 +700,7 @@ h5 {
     .box {
         min-width: 45rem;
         margin: -10rem 15rem 10rem;
+        padding: 7rem;
     }
   
     .about-me {
@@ -744,6 +722,7 @@ h5 {
    
     .skills-h2 {
         text-align: center;
+        padding-block-end: 8rem;
     }
 
     .taidot-p {
@@ -829,11 +808,13 @@ h5 {
  
     .orange-box {
     margin-block-start: -20rem;
-    padding-block-end: 15rem;
+    padding-block-end: 18rem;
+    max-width: 67%;
     }
     .contact-info {
         padding-block-start: 25rem;
-        line-height: 4vw;
+        line-height: 3vw;
+        font-size: 2vw;
     }
     .logo-footer {
         width: 12rem;
