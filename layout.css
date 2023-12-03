@@ -231,27 +231,36 @@ h5 {
     margin: 0 3rem 4rem;
     /* width: auto; */
 }
+.project-description-2 {
+    max-width: 14rem;
+}
 .line-portfolio {
     margin-block-start: 2rem;
     margin-block-end: 3rem;
     border-color: var(--black);
     border: solid 0.5px var(--black);
 }
+
+.react-heading-container {
+    display: flex;
+    flex-direction: column;
+    
+}
 .react-container {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .react-tasks {
-   
-    margin-block-end: 4rem;
-        margin-block-start: 5rem;
-        margin-inline-start: 0rem;
-        display: flex;
-        flex-direction: column;
+    /* margin-block-end: 4rem; */
+    margin-block-start: 0.5rem;
+    margin-inline-start: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .react-tasks >* {
-    margin: 0 2rem 2rem;
+    margin: 0 0rem 2rem;
     height: fit-content;
 }
 .react-tasks li {
@@ -525,15 +534,21 @@ h5 {
         justify-content: flex-start;
     }
    
-    .project-description-2 {
-        min-width: 20rem;
+    .react-heading-container {
+
     }
+    .project-description-2 {
+        min-width: 27rem;
+
+    }
+
     .react-tasks {
-    margin-block-end: 4rem;
-        margin-block-start: 5rem;
+    /* margin-block-end: 4rem; */
+        margin-block-start: 1rem;
         margin-inline-start: 0rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .react-tasks >* {
         margin: 0 1rem 2rem;
@@ -790,7 +805,7 @@ h5 {
     
     .projekti-2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: normal;
         margin-block-start: 7rem;
         margin-inline-start: 35rem;
@@ -798,9 +813,9 @@ h5 {
     }
    
     .react-tasks {
-        margin-block-end: 0;
+        /* margin-block-end: 0; */
         margin-inline-start: 0rem;
-        
+        max-width: 40%;
     }
    
     .line-portfolio-end {
