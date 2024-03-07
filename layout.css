@@ -252,16 +252,27 @@ h5 {
     align-items: flex-start;
 }
 
+
+.react-exercises {
+    display: flex;
+    flex-direction: column;
+}
+.react-container {
+display: flex;
+flex-direction: column;
+}
 .react-tasks {
     /* margin-block-end: 4rem; */
     margin-block-start: 0.5rem;
     margin-inline-start: 3rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 30rem;
 }
+
 .react-tasks >* {
-    margin: 0 0rem 2rem;
-    height: fit-content;
+    margin: 0 1rem 2rem;
 }
 .react-tasks li {
     font-size: 16px;
@@ -528,14 +539,11 @@ h5 {
         margin-inline-start: 6rem;
         margin-block-end: 5rem;
     }
+   
     .react-container {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-   
-    .react-heading-container {
-
+        flex-direction: column;
+        max-width: 90rem;
     }
     .project-description-2 {
         min-width: 27rem;
@@ -545,10 +553,11 @@ h5 {
     .react-tasks {
     /* margin-block-end: 4rem; */
         margin-block-start: 1rem;
-        margin-inline-start: 0rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-inline-start: 0rem;
+        max-width: 50%;
     }
     .react-tasks >* {
         margin: 0 1rem 2rem;
@@ -557,6 +566,14 @@ h5 {
         font-size: 20px;
     }
    
+    .react-heading-container {
+        max-width: 65rem;
+    }
+    .react-exercises {
+        display: flex;
+        flex-direction: row;
+    }
+
     .line-portfolio-end {
         margin-block-end: 10rem;
     }
@@ -809,14 +826,18 @@ h5 {
         flex-direction: column;
         justify-content: normal;
         margin-block-start: 7rem;
-        margin-inline-start: 35rem;
+        /* margin-inline-start: 35rem; */
         margin-block-end: 5rem;
+        align-items: center;
+        margin-inline-start: 0;
     }
-   
-    .react-tasks {
-        /* margin-block-end: 0; */
-        margin-inline-start: 0rem;
-        max-width: 40%;
+
+    .react-heading-container {
+        max-width: 65rem;
+    }
+    .react-exercises {
+        display: flex;
+        flex-direction: row;
     }
    
     .line-portfolio-end {
