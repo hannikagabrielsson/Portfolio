@@ -158,9 +158,13 @@ h2 {
     margin: -10rem 0 6rem;
 }
 .about-me {
-    padding-block-start: 10rem;
+    padding-block-start: 2rem;
     min-width: 5rem;
     width: 100%;
+}
+
+.about-me >* {
+    margin: 2rem 0;
 }
 
 .adjektiivit {
@@ -185,6 +189,12 @@ h2 {
 .taidot-p {
    margin: 0 3rem 4rem;
    width: auto;
+}
+
+.taidot-p a {
+    color: #313030;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .taidot-box {
@@ -491,6 +501,11 @@ flex-direction: column;
          padding: 5rem 2rem 5rem;
          margin-block-end: 10rem;
      }
+
+     .figma-link {
+        display: flex;
+        justify-content: center;
+     }
      .kielet {
          font-size: 20px;
          margin-block-end: 3rem;
@@ -583,7 +598,6 @@ flex-direction: column;
         display: block;
         width: 100%;
         margin: 12 0 0 0;
-  
     }
 
     .contact-container {
@@ -728,9 +742,11 @@ flex-direction: column;
     .tietoa-minusta {
         margin-block-start: 15rem;
         /* margin-inline-start: 20rem; */
+        margin: 15rem 5rem 0;
     }
     h2 {
-        font-size: max(4vw,38px );
+        /* font-size: max(4vw,38px ); */
+        font-size: 50px;
         margin-inline-start: 0;
     }
 
@@ -784,6 +800,10 @@ flex-direction: column;
 
      .line-kielet {
         width: 60rem;
+    }
+
+    .portfolio {
+        margin: 0 5rem;
     }
 
     .portfolio-h2 {
@@ -849,6 +869,10 @@ flex-direction: column;
     .icons-container {
         margin-block-start: 14rem;
         padding-inline-start: 1rem;
+    }
+
+    .yhteydenotto {
+        margin: 0 5rem;
     }
  
     .orange-box {
